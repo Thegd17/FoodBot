@@ -1,31 +1,37 @@
-🍛 Saffron Delight (FoodBot)
+# 🍛 Saffron Delight (FoodBot)
+> **An AI-Powered Food Ordering System built with FastAPI, Dialogflow, and Supabase.**
 
-An AI-Powered Food Ordering System built with FastAPI, Dialogflow, and Supabase.
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Dialogflow](https://img.shields.io/badge/Dialogflow-FF9800?style=for-the-badge&logo=dialogflow&logoColor=white)](https://cloud.google.com/dialogflow)
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-📜 Project Overview
+---
 
-Saffron Delight is a full-stack food ordering application that combines a modern, responsive frontend with an intelligent chatbot backend. Users can browse a royal Indian menu, chat with an AI assistant to place orders naturally, and track their order status in real-time.
+## 📜 Project Overview
 
-🌟 Live Demo
+**Saffron Delight** is a full-stack food ordering application that combines a modern, responsive frontend with an intelligent chatbot backend. Users can browse a royal Indian menu, chat with an AI assistant to place orders naturally, and track their order status in real-time.
 
-🚀 View Live Project on Vercel
+### 🌟 Live Demo
+**[🚀 View Live Project on Vercel](https://food-bot-gold.vercel.app/)**
 
-✨ Key Features
+---
 
-🗣️ NLP Chatbot: Powered by Google Dialogflow, capable of handling complex orders (e.g., "1 Pav Bhaji and 2 Mango Lassi").
+## ✨ Key Features
 
-🛒 Order Management: Supports adding items, removing items, and completing orders with total price calculation.
+* **🗣️ NLP Chatbot:** Powered by **Google Dialogflow**, capable of handling complex orders (e.g., *"1 Pav Bhaji and 2 Mango Lassi"*).
+* **🛒 Order Management:** Supports adding items, removing items, and completing orders with total price calculation.
+* **📦 Order Tracking:** Users can track order status using their Order ID.
+* **🗄️ Database Persistence:** All orders and tracking statuses are stored in **Supabase (PostgreSQL)**.
+* **🎨 Modern Indian UI:** A responsive website featuring a "Royal Maroon & Saffron" theme with smooth AOS animations.
+* **⚡ Fast Backend:** Built with **FastAPI** for high-performance asynchronous request handling.
 
-📦 Order Tracking: Users can track order status using their Order ID.
+---
 
-🗄️ Database Persistence: All orders and tracking statuses are stored in Supabase (PostgreSQL).
+## 📂 Directory Structure
 
-🎨 Modern Indian UI: A responsive website featuring a "Royal Maroon & Saffron" theme with smooth AOS animations.
-
-⚡ Fast Backend: Built with FastAPI for high-performance asynchronous request handling.
-
-📂 Directory Structure
-
+```text
 SaffronDelight/
 │
 ├── main.py                  # 🚀 Entry point (FastAPI App & Webhook)
@@ -40,7 +46,6 @@ SaffronDelight/
     ├── style.css            # CSS Styling
     ├── script.js            # Frontend Logic
     └── images/              # Menu Images (Optimized JPG/WebP)
-
 
 🛠️ Tech Stack
 
