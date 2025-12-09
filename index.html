@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saffron Delight | Modern Indian Cuisine</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">Saffron <span>Delight</span> <i class="fas fa-pepper-hot"></i></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Royal Menu</a></li>
+            <li><a href="#about">Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn nav-btn" onclick="document.querySelector('df-messenger').shadowRoot.querySelector('.df-messenger-wrapper').querySelector('#widgetIcon').click()">Chat Order</button>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
+            <h1>The Soul of India,<br>Reimagined.</h1>
+            <p>Authentic flavors, modern convenience, and the smartest way to dine.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn primary-btn">Explore Menu</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="menu" class="section">
+        <div class="section-header" data-aos="fade-up">
+            <span class="subtitle">Culinary Masterpieces</span>
+            <h2>Our Royal Menu</h2>
+            <div class="divider"><i class="fas fa-crown"></i></div>
+        </div>
+
+        <div class="menu-container">
+            
+            <div class="food-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="img-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bambayya_Pav_bhaji.jpg/800px-Bambayya_Pav_bhaji.jpg" alt="Pav Bhaji">
+                    <div class="badge">Bestseller</div>
+                </div>
+                <div class="details">
+                    <h3>Pav Bhaji</h3>
+                    <p class="desc">Mumbai's favorite spicy vegetable mash with buttery buns.</p>
+                    <div class="price-row">
+                        <span class="price">₹150</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="img-box">
+                    <img src="static/images/chhole-bhature.webp" alt="Chole Bhature" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/91/Chole_Bhature_home_made.jpg'">
+                </div>
+                <div class="details">
+                    <h3>Chole Bhature</h3>
+                    <p class="desc">Punjabi spiced chickpeas with fluffy fried bread.</p>
+                    <div class="price-row">
+                        <span class="price">₹120</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pizza">
+                </div>
+                <div class="details">
+                    <h3>Veggie Pizza</h3>
+                    <p class="desc">Italian classic with an Indian twist of paneer and spices.</p>
+                    <div class="price-row">
+                        <span class="price">₹250</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="img-box">
+                    <img src="static/images/mango-lassi.webp" alt="Mango Lassi" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e6/Mango_Lassi.jpg'">
+                </div>
+                <div class="details">
+                    <h3>Mango Lassi</h3>
+                    <p class="desc">Rich, creamy yoghurt drink made with Alphonso mangoes.</p>
+                    <div class="price-row">
+                        <span class="price">₹60</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="food-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="img-box">
+                    <img src="static/images/veg-biryani.webp" alt="Biryani" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/6/63/Hyderabadi_Chicken_Biryani.jpg'">
+                </div>
+                <div class="details">
+                    <h3>Veg Biryani</h3>
+                    <p class="desc">Aromatic basmati rice cooked with exotic spices & veggies.</p>
+                    <div class="price-row">
+                        <span class="price">₹180</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="350">
+                <div class="img-box">
+                    <img src="static/images/masala-dosa.webp" alt="Dosa" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/9f/Masala_Dosa_Food.jpg'">
+                </div>
+                <div class="details">
+                    <h3>Masala Dosa</h3>
+                    <p class="desc">Crispy crepe filled with spiced potato masala and chutney.</p>
+                    <div class="price-row">
+                        <span class="price">₹80</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="img-box">
+                    <img src="static/images/vada-pav.webp" alt="Vada Pav" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/23/Vada_Pav.jpg'">
+                </div>
+                <div class="details">
+                    <h3>Vada Pav</h3>
+                    <p class="desc">The Indian Burger. Deep fried potato dumpling in a bun.</p>
+                    <div class="price-row">
+                        <span class="price">₹40</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card" data-aos="fade-up" data-aos-delay="450">
+                <div class="img-box">
+                    <img src="static/images/rava-dosa.webp" alt="Rava Dosa" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/07/Rava_Dosa.JPG'">
+                </div>
+                <div class="details">
+                    <h3>Rava Dosa</h3>
+                    <p class="desc">Instant semolina crepe, crispy and served with sambar.</p>
+                    <div class="price-row">
+                        <span class="price">₹90</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="food-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="img-box">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Samosachutney.jpg/800px-Samosachutney.jpg" alt="Samosa">
+                </div>
+                <div class="details">
+                    <h3>Royal Samosa</h3>
+                    <p class="desc">Crispy golden pastry filled with spiced potatoes (2 pcs).</p>
+                    <div class="price-row">
+                        <span class="price">₹50</span>
+                        <button class="btn sm-btn">Order <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Saffron Delight</h2>
+            <p>Experience the royal taste of India.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="address">📍 38 Patli Gali, Mumbai | 📞 +91 791234567</p>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Saffron Delight. Built with ❤️ and Python.
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Saffron Delight"
+      agent-id="9e8e09d8-35e1-4b86-a64e-c95f35ff1c45"
+      language-code="en"
+    ></df-messenger>
+
+    <style>
+        df-messenger {
+            --df-messenger-bot-message: #F5E6CA;
+            --df-messenger-button-titlebar-color: #7B1E24;
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-color: #2C0E0F;
+            --df-messenger-send-icon: #D98829;
+            --df-messenger-user-message: #D98829;
+        }
+    </style>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="static/style.css"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
